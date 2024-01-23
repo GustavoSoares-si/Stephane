@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estephane</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="painel">
+        <h1>Estephane</h1>
+        <p>da um play no audio ai em baixo kkk e escute a musica que você gosta</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+
+        <h3>querida Estephane, eu sei que nos conhecemos faz poucos dias,
+            mas em poucas palavras gostaria de te falar o que sinto,
+            como você sabe eu me apixonei por você a primeira vista,
+            eu nao sei o que se passa na sua cabeça, mas eu gostaria muito
+            de poder esta nas sua imaginações agora, eu estou muito feliz por te conhecer,
+            e espero que você sinta o mesmo, do fundo do meu coração eu quero muito que um 
+            dia eu tenha a oportunidade de ser seu parceiro nessa vida, me apaixonei
+            e gostei de você, tenho varias coisas pra te contar, e muito a fazer por você,
+            senti saudades de sentir ess paixão dentro de mim, voce com seu sorriso
+            brotou esse sentimento em meu coração.
+
+        </h3>
+
+        <img class="ur" src="urso.gif" alt="">
+
+    </div>
+    <div class="painel2">
+        <h1>Pedido para sair</h1>
+
+        <img class="img" src="https://usagif.com/wp-content/uploads/gif-heart-51.gif" alt="">
+        
+        <h3>Estephane, aceita sair comigo por favorzinho</h3>
+        <p style="color: black;">clica na sua resposta aqui em baixo</p>
+
+        <a href="aceitou.html"><button id="sim" onclick="parabens()">SIM!</button></a>
+        <button onmouseover="fuja()" id="nao">NÃO!</button>
+
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * 500);
+            var aleatorioY = Math.floor(Math.random() * 500);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+
+        function parabens(){
+            alert('isso é uma maravilha quer dizer que você aceitou, clica no "ok" e assista seu vídeo, aproveite kkkk ;)')
+        }
+    </script>
+</body>
+</html>
